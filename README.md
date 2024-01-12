@@ -54,3 +54,7 @@ The files which are in below contain different infrared pixel intensity values e
                         }
                     ]
 ```
+
+## First Experiment Results:
+
+![first_experiment_results](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/first_experiment_results.png)
