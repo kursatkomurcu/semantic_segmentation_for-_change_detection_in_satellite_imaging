@@ -28,7 +28,7 @@ The files which are in below contain different infrared pixel intensity values e
 
 **VAR_results.json** --> it contains VAR Model result for each 100 points. Structure of the json is in below.
 
-```json
+```
                      [
                         {
                             'rmse_results': {
@@ -54,6 +54,19 @@ The files which are in below contain different infrared pixel intensity values e
                         }
                     ]
 ```
+
+## Code Files
+
+**VAR_Model.ipynb** --> Main noteebook for Variational Autoregression Analysis (VAR)
+
+**cloud_probability** --> Collect cloud probabilities for selected points and date interval
+
+**pixel_intensities.ipynb** --> Collect pixel intentisty values for selected bands
+
+**collect_probabilities.ipynb** --> Collect class probabilities of segmented images
+
+**random_coords.py** --> Collect random 10000 points beetween selected latitudes and longitudes
+
 
 ## First Experiment Results:
 
