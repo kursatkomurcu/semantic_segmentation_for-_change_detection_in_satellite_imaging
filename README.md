@@ -59,13 +59,13 @@ The files which are in below contain different infrared pixel intensity values e
 
 **VAR_Model.ipynb** --> Main noteebook for Variational Autoregression Analysis (VAR)
 
-**cloud_probability** --> Collect cloud probabilities for selected points and date interval
+**cloud_probability.ipynb** --> Collect cloud probabilities for selected points and date interval
 
 **pixel_intensities.ipynb** --> Collect pixel intentisty values for selected bands
 
 **collect_probabilities.ipynb** --> Collect class probabilities of segmented images
 
-**random_coords.py** --> Collect random 10000 points beetween selected latitudes and longitudes
+**create_df_different_points.ipynb** --> Collect random 10000 points beetween selected latitudes and longitudes
 
 
 ## First Experiment Results:
