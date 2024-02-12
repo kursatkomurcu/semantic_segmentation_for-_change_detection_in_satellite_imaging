@@ -87,3 +87,9 @@ The files which are in below contain different infrared pixel intensity values e
 
 *Note: RMSE and Fall In CI columns are values for Class2*
 
+## How to test?
+
+```bash
+  python test.py --start_date YOUR_START_DATE --stop_date YOUR_STOP_DATE --bands YOUR_BANDS(They should seperate by comma) --index YOUR_INDEX_FOR_TEST
+```
+
