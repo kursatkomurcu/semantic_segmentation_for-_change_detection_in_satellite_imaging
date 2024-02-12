@@ -90,6 +90,14 @@ The files which are in below contain different infrared pixel intensity values e
 ## How to test?
 
 ```bash
+  pip install earthengine-api
+```
+
+```bash
+  earthengine authenticate
+```
+
+```bash
   python test.py --start_date YOUR_START_DATE --stop_date YOUR_STOP_DATE --bands YOUR_BANDS(They should seperate by comma) --index YOUR_INDEX_FOR_TEST
 ```
 
