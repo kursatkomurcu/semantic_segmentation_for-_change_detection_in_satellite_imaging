@@ -72,7 +72,7 @@ The files which are in below contain different infrared pixel intensity values e
 
 ![first_experiment_results](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/first_experiment_results.png)
 
-| Index | Lat      | Lon      | RMSE     | AIC      | Fall In CI |
+| Index | Lon      | Lat      | RMSE     | AIC      | Fall In CI |
 |-------|----------|----------|----------|----------|------------|
 | 0     | 57.9822  | 27.5759  | 0.206    | -105.333 | 0          |
 | 1     | 54.8303  | 21.8945  | 2.98e-15 | None     | 0.9761     |
