@@ -3,6 +3,7 @@ import argparse
 from create_df_different_points import *
 from pixel_intensities import *
 from cloud_probability import *
+from class_probability import *
 from Automatically_generating_object_masks_with_SAM import *
 from VAR_Model import *
 
@@ -22,4 +23,5 @@ collect_pixel_intensities(args.start_date, args.end_date, bands)
 collect_cloud_probabilities(args.start_date, args.end_date)
 collect_iou(args.start_date, args.end_date)
 collect_scores(args.start_date, args.end_date)
+class_probabilities(args.start_date, args.end_date)
 VAR_Model(args.index)
