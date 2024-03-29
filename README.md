@@ -65,6 +65,8 @@ The files which are in below contain different infrared pixel intensity values e
 
 **collect_probabilities.ipynb** --> Collect class probabilities of segmented images
 
+**class_probabilities.ipynb** --> Collect class probabilities of segmented images
+
 **create_df_different_points.ipynb** --> Collect random 10000 points beetween selected latitudes and longitudes
 
 
