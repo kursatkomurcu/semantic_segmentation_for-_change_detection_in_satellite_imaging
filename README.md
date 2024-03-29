@@ -72,18 +72,18 @@ The files which are in below contain different infrared pixel intensity values e
 
 ![first_experiment_results](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/first_experiment_results.png)
 
-| Index | Lon      | Lat      | RMSE     | AIC      | Fall In CI |
+| Index | Lat      | Lon      | RMSE     | AIC      | Fall In CI |
 |-------|----------|----------|----------|----------|------------|
-| 0     | 57.9822  | 27.5759  | 0.206    | -105.333 | 0          |
-| 1     | 54.8303  | 21.8945  | 2.98e-15 | None     | 0.9761     |
-| 2     | 59.1785  | 24.5851  | 0.02     | -112.393 | 0.4444     |
-| 3     | 57.2123  | 24.1739  | 0.008    | -58.051  | 0.5        |
-| 4     | 55.4973  | 23.1317  | 5.84e-04 | None     | 0.988      |
-| 5     | 59.5876  | 25.7885  | 0.029    | -114.48  | 0.3048     |
-| 6     | 57.2948  | 22.5929  | 3.07e-04 | -205.4   | 0.9761     |
-| 7     | 53.6124  | 27.2380  | 5e-04    | -51.1965 | 0.4352     |
-| 8     | 54.6356  | 22.8023  | 0.115    | -136.188 | 0          |
-| 9     | 56.6370  | 20.7791  | 0.098    | None     | 0          |
+| 0     | 57.9822  | 27.5759  | 0.085    | -92.993  | %0         |
+| 1     | 54.8303  | 21.8945  | 0.118    | -123.880 | %0         |
+| 2     | 59.1785  | 24.5851  | 0.058    | -92.618  | %0         |
+| 3     | 57.2123  | 24.1739  | <0.001   | None     | %99.363    |
+| 4     | 55.4973  | 23.1317  | 0.089    | -105.224 | %0         |
+| 5     | 59.5876  | 25.7885  | 0.053    | -96.585  | %0.746     |
+| 6     | 57.2948  | 22.5929  | 0.093    | -98.745  | %0         |
+| 7     | 53.6124  | 27.2380  | 0.080    | -102.598 | %0         |
+| 8     | 54.6356  | 22.8023  | 0.096    | -113.109 | %0         |
+| 9     | 56.6370  | 20.7791  | 0.112    | -123.783 | %0         |
 
 *Note: RMSE and Fall In CI columns are values for Class2*
 
@@ -98,6 +98,6 @@ The files which are in below contain different infrared pixel intensity values e
 ```
 
 ```bash
-  python test.py --start_date YOUR_START_DATE --stop_date YOUR_STOP_DATE --bands YOUR_BANDS(They should seperate by comma) --index YOUR_INDEX_FOR_TEST
+  python test.py --start_date 2022-01-01 --end_date 2023-01-01 --bands B4,B3,B2 --index 3
 ```
 
