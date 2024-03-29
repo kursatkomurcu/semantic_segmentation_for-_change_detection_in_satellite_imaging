@@ -22,7 +22,7 @@ def collect_iou(start_date, end_date):
       automatic = True, # --> to use generate function set automatic param as True,
   )                      # --> to use predict function set automatic param as False
 
-  random_point_df = pd.read_csv('data/10k_random.csv')
+  random_point_df = pd.read_csv('10k_random.csv')
   coordinates = random_point_df[['lon', 'lat']].values.tolist()
 
   dataset = ee.ImageCollection('COPERNICUS/S2')
@@ -100,15 +100,15 @@ def collect_iou(start_date, end_date):
       df = pd.DataFrame()
       if i != 0 and i % 10 == 0:
         save_df = pd.concat(ious, axis=1)
-        save_df.to_csv('data/100points_iou.csv')
+        save_df.to_csv('100points_iou.csv')
 
   save_df = pd.concat(ious, axis=1)
-  save_df.to_csv('data/100points_iou.csv')
+  save_df.to_csv('100points_iou.csv')
   print("Collecting IOU finished")
 
 def collect_scores(start_date, end_date):
   print("Scores Collecting")
-  random_point_df = pd.read_csv('data/10k_random.csv')
+  random_point_df = pd.read_csv('10k_random.csv')
   coordinates = random_point_df[['lon', 'lat']].values.tolist()
 
   dataset = ee.ImageCollection('COPERNICUS/S2')
@@ -200,9 +200,9 @@ def collect_scores(start_date, end_date):
       df = pd.DataFrame()
       if i != 0 and i % 10 == 0:
         save_df = pd.concat(ious, axis=1)
-        save_df.to_csv('datapatial/100points_scores.csv')
+        save_df.to_csv('100points_scores.csv')
 
   save_df = pd.concat(ious, axis=1)
-  save_df.to_csv('datapatial/100points_scores.csv')
+  save_df.to_csv('100points_scores.csv')
   print("Scores Collecting finished")
 

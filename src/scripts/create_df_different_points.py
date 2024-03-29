@@ -34,6 +34,6 @@ def create_dataset_with_random_coordinates():
         print(f"latitude: {lat}, longitude: {lon}, id: {idx}")
 
     df = pd.DataFrame(dataset_with_ids, columns=['lat', 'lon', 'id'])
-    df.to_csv('data/10k_random.csv', index=False)
+    df.to_csv('10k_random.csv', index=False)
     
     print("Creating dataset process is finished")

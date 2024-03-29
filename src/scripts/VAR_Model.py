@@ -7,11 +7,12 @@ import scipy.stats as st
 import matplotlib.pyplot as plt
 
 
-def VAR_Model(index):
+def VAR_Model(index, bands):
     print("VAR Model")
+
     # Read Json
-    points_probabilities = 'data/100points_probabilities.json'
-    cloud_json = 'data/cloud_probabilities.json'
+    points_probabilities = '100points_probabilities.json'
+    cloud_json = 'cloud_probabilities.json'
     cloud_prob = []
     cloud_date = []
 
@@ -35,12 +36,14 @@ def VAR_Model(index):
                 cloud_date.append(date)
                 cloud_prob.append(prob)
 
+    bands = bands.split(',')
+
     # Read csv
-    pixel_df4 = pd.read_csv('data/100points_pixelIntensitiesB4.csv')
-    pixel_df3 = pd.read_csv('data/100points_pixelIntensitiesB3.csv')
-    pixel_df2 = pd.read_csv('data/100points_pixelIntensitiesB2.csv')
-    iou_df = pd.read_csv('data/100points_iou.csv')
-    scores_df = pd.read_csv('data/100points_scores.csv')
+    pixel_df4 = pd.read_csv(f'100points_pixelIntensities{bands[0]}.csv')
+    pixel_df3 = pd.read_csv(f'100points_pixelIntensities{bands[1]}.csv')
+    pixel_df2 = pd.read_csv(f'100points_pixelIntensities{bands[2]}.csv')
+    iou_df = pd.read_csv('100points_iou.csv')
+    scores_df = pd.read_csv('100points_scores.csv')
 
     date_series = pd.to_datetime(cloud_date) 
     date = pd.DataFrame(date_series, columns=['Date'])

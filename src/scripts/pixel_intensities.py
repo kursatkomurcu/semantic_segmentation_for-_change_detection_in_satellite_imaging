@@ -52,11 +52,11 @@ def collect_pixel_intensities(start_date, end_date, bands):
             # Save after every 10th point
             if i % 10 == 0:
                 save_df = pd.concat(df_result_list, axis=1)
-                save_df.to_csv(f'data/100points_pixelIntensities{band}.csv')
+                save_df.to_csv(f'100points_pixelIntensities{band}.csv')
 
         # Handle remaining data frames
         if df_result_list:
             save_df = pd.concat(df_result_list, axis=1)
-            save_df.to_csv(f'data/100points_pixelIntensities{band}.csv')
+            save_df.to_csv(f'100points_pixelIntensities{band}.csv')
     
     print("Pixel Intensities were collected")
