@@ -70,7 +70,9 @@ The files which are in below contain different infrared pixel intensity values e
 
 ## First Experiment Results:
 
-![first_experiment_results](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/first_experiment_results.png)
+![diagram](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/diagram.png)
+
+This diagram shows the results of index 3
 
 | Index | Lat      | Lon      | RMSE     | AIC      | Fall In CI |
 |-------|----------|----------|----------|----------|------------|
@@ -86,6 +88,16 @@ The files which are in below contain different infrared pixel intensity values e
 | 9     | 56.6370  | 20.7791  | 0.112    | -123.783 | %0         |
 
 *Note: RMSE and Fall In CI columns are values for Class2*
+
+## Full Results of Index 3
+
+![pixel_intensities](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/pixel_intensities.png)
+
+![iou_scores](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/iou_scores.png)
+
+![classes](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/classes.png)
+
+![classes_](https://github.com/kursatkomurcu/semantic_segmentation_for-_change_detection_in_satellite_imaging/blob/main/images/classes_.png)
 
 ## How to test?
 
