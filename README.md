@@ -113,3 +113,16 @@ This diagram shows the results of index 3
   python test.py --start_date 2022-01-01 --end_date 2023-01-01 --bands B4,B3,B2 --index 3
 ```
 
+## Citiation
+
+```
+  @article{komurcu2024semantic,
+    author    = {K. K{\"o}m{\"u}rc{\"u} and L. Petkevicius},
+    title     = {Semantic Segmentation for Change Detection in Satellite Imaging},
+    journal   = {open-series},
+    pages     = {57--64},
+    month     = {May},
+    year      = {2024},
+    doi       = {10.15388/LMITT.2024.8}
+  }
+```
